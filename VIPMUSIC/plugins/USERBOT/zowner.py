@@ -1,22 +1,57 @@
 import asyncio
-from VIPMUSIC import app
+
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from VIPMUSIC.mongo.afkdb import LOGGERS as OWNERS
-from VIPMUSIC.utils.database import get_assistant
+from VIPMUSIC.utils.database import add_served_chat_clone, get_assistant
 
 
-@Client.on_message(filters.command(["repo", "source"]))
+@Client.on_message(filters.command("repo") & filters.group)
 async def repo(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/4b52da6d880cbb199298a.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱[𝐑𝐄𝐏𝐎](https://github.com/THE-VIP-BOY-OP/VIP-MUSIC)🍁""",
+        photo=f"https://telegra.ph/file/634e3ba7e32808c97ac88.jpg",
+        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-MUSIC"
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/grandxmasti"
+                    )
+                ]
+            ]
+        ),
+    )
+
+
+@Client.on_message(filters.command("repo") & filters.group)
+async def help(client: Client, message: Message):
+
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/634e3ba7e32808c97ac88.jpg",
+        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/grandxmasti"
+                    )
+                ]
+            ]
+        ),
+    )
+
+
+@Client.on_message(filters.command("repo") & filters.private)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/634e3ba7e32808c97ac88.jpg",
+        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🌱ƨσʋяcɛ🌱", url=f"https://t.me/grandxmasti"
                     )
                 ]
             ]
@@ -32,13 +67,11 @@ async def repo(client: Client, message: Message):
         ["hi", "hii", "hello", "hui", "good", "gm", "ok", "bye", "welcome", "thanks"],
         prefixes=["/", "!", "%", ",", "", ".", "@", "#"],
     )
-    & filters.private
+    & filters.group
 )
 async def bot_check(_, message):
     chat_id = message.chat.id
-    await message.reply(
-        f"**Hey i am assistant id of @{app.username}.**\n**How Can I Help You??**"
-    )
+    await add_served_chat_clone(chat_id)
 
 
 # --------------------------------------------------------------------------------- #
@@ -52,7 +85,7 @@ async def add_all(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
         await message.reply(
-            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @TG_VC_BOT`**"
+            "**⚠️ ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀᴍᴀᴛ. ᴘʟᴇᴀsᴇ ᴜsᴇ ʟɪᴋᴇ » `/gadd @Kitty_musicXbot`**"
         )
         return
 
