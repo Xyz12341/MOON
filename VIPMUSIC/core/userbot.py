@@ -66,11 +66,11 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("THE_VIP_BOY")
-                await self.one.join_chat("THE_VIP_BOY_OP")
-                await self.one.join_chat("TG_FRIENDSS")
-                await self.one.join_chat("VIP_CREATORS")
-                await self.one.join_chat("TheTeamVivek")
+                await self.one.join_chat("grandxmasti")
+                await self.one.join_chat("about_ur_moonshining")
+                await self.one.join_chat("kittyxupdates")
+                await self.one.join_chat("herokue_cc")
+                await self.one.join_chat("Thewarriorsxnetwork")
 
             except:
                 pass
@@ -97,11 +97,11 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("THE_VIP_BOY")
-                await self.two.join_chat("THE_VIP_BOY_OP")
-                await self.two.join_chat("TG_FRIENDSS")
-                await self.two.join_chat("VIP_CREATORS")
-                await self.two.join_chat("TheTeamVivek")
+                await self.two.join_chat("grandxmasti")
+                await self.two.join_chat("about_ur_moonshining")
+                await self.two.join_chat("kittyxupdates")
+                await self.two.join_chat("herokue_cc")
+                await self.two.join_chat("Thewarriorsxnetwork")
             except:
                 pass
             assistants.append(2)
@@ -122,11 +122,11 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("THE_VIP_BOY")
-                await self.three.join_chat("THE_VIP_BOY_OP")
-                await self.three.join_chat("TG_FRIENDSS")
-                await self.three.join_chat("VIP_CREATORS")
-                await self.three.join_chat("TheTeamVivek")
+                await self.three.join_chat("grandxmasti")
+                await self.three.join_chat("about_ur_moonshining")
+                await self.three.join_chat("kittyxupdates")
+                await self.three.join_chat("herokue_cc")
+                await self.three.join_chat("Thewarriorsxnetwork")
             except:
                 pass
             assistants.append(3)
@@ -148,11 +148,11 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("THE_VIP_BOY")
-                await self.four.join_chat("THE_VIP_BOY_OP")
-                await self.four.join_chat("TG_FRIENDSS")
-                await self.four.join_chat("VIP_CREATORS")
-                await self.four.join_chat("TheTeamVivek")
+                await self.four.join_chat("grandxmasti")
+                await self.four.join_chat("about_ur_moonshining")
+                await self.four.join_chat("kittyxupdates")
+                await self.four.join_chat("herokue_cc")
+                await self.four.join_chat("Thewarriorsxnetwork")
             except:
                 pass
             assistants.append(4)
@@ -174,11 +174,11 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("THE_VIP_BOY")
-                await self.five.join_chat("THE_VIP_BOY_OP")
-                await self.five.join_chat("TG_FRIENDSS")
-                await self.five.join_chat("VIP_CREATORS")
-                await self.five.join_chat("TheTeamVivek")
+                await self.five.join_chat("grandxmasti")
+                await self.five.join_chat("about_ur_moonshining")
+                await self.five.join_chat("kittyxupdates")
+                await self.five.join_chat("herokue_cc")
+                await self.five.join_chat("Thewarriorsxnetwork")
             except:
                 pass
             assistants.append(5)
