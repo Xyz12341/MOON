@@ -1,0 +1,5 @@
+name: VIPMUSIC
+version: 1.0.0
+description: A music bot component
+type: python
+port: 8080
